@@ -62,8 +62,8 @@ def score(args):
         if output_scores[qid] >= threshold:
             output_predictions[qid] = ""
 
-    output_prediction_file = "output/predictions.json"
-    with open(output_prediction_file, "w") as writer:
+    output_prediction_file = args.predict_file
+    with open('output/' + output_prediction_file, "w") as writer:
         writer.write(json.dumps(output_predictions, indent=4) + "\n")
 
 def main():
