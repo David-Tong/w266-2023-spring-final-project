@@ -1,7 +1,7 @@
 # question-answering-model
 Question Answering Model
 
-1. Run SQuAD2_Baseline_And_Improvement.ipynb
+## Run SQuAD2_Baseline_And_Improvement.ipynb
 
 Train Baseline Model - distilbert-base-uncased
 
@@ -13,13 +13,13 @@ Train Improved Type 1 Model - t5-small
 
 Get eval_null_odds.json file and eval_nbest_predictions.json file
 
-2. Run SQuAD2_Skim_Read_Model.ipynb
+## Run SQuAD2_Skim_Read_Model.ipynb
 
 Train Improved Type 2 Model - skim-read-model, skim predictor part
 
 Get skim_null_odds.json file, reuse eval_nbest_predictions.json file in step 1
 
-3. squad2-skim-read-predictor
+## squad2-skim-read-predictor
 
 Run predict-v2.0.py for skim-read model
 
